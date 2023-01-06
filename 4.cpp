@@ -1,18 +1,19 @@
 #include <iostream>
+#include <cmath>
+int main()
+{
+    int H,M,III;
+    std :: cout << "H = ";
+    std :: cin >> H;
+    std :: cout << "M = ";
+    std :: cin >> M;
+    std :: cout << "III = ";
+    std :: cin >> III;
 
-float X, Y, Z;
-
-void data_input() {
-    std::cout << "Enter step - ";
-    std::cin >> X;
-    std::cout << "Enter min - ";
-    std::cin >> Y;
-    std::cout << "Enter max - ";
-    std::cin >> Z;
-}
-int main() {
-    data_input();
-    for (X; X <= Y; X = X + Z) {
-        std::cout << X << " ";
+    for(; H < M ; H += III)
+    {
+        std :: cout << H << " ";
     }
+    std :: cout << M << " ";
+    return 0;
 }
